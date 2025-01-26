@@ -24,9 +24,7 @@ body {
     margin: 0 auto;
 }
 
-@mixin v-center-container {
-
-}
+// reserved for singular containers on a page!
 
 
 // colors
@@ -46,17 +44,27 @@ $spacing-200: 16px;
 // QR landing page
 body {
     background-color: $color-slate--300;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .qr-container {
-    @include h-center-container;
     width: 320px;
-    background-color: $color-white;
+    background-color: #ffffff;
     padding: 16px 16px 16px 40px;
     border-radius: 20px;
-    display: grid;
-    justify-content: center;
+    display: flex;
     text-align: center;
+    flex-direction: column;
 
     & img {
         width: 288px;
@@ -71,4 +79,11 @@ body {
         @include font-regular;
         color: $color-slate--500;
     }
+}
+
+.attribution {
+    @include h-center-container;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
 }

@@ -3,18 +3,26 @@ body {
   font-family: "Outfit", serif; }
 
 body {
-  background-color: #D5E1EF; }
+  background-color: #D5E1EF;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center; }
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 .qr-container {
-  display: block;
-  margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
   padding: 16px 16px 16px 40px;
   border-radius: 20px;
-  display: grid;
-  justify-content: center;
-  text-align: center; }
+  display: flex;
+  text-align: center;
+  flex-direction: column; }
   .qr-container img {
     width: 288px; }
   .qr-container__header-text {
@@ -29,3 +37,10 @@ body {
     font-weight: 400;
     letter-spacing: 0.2px;
     color: #68778D; }
+
+.attribution {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  padding: 20px; }
