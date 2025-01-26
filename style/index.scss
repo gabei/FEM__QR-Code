@@ -1,0 +1,74 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", serif;
+}
+
+@mixin font-regular {
+    line-height: 140%;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+@mixin font-bold {
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: 0px;
+}  
+
+@mixin h-center-container {
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin v-center-container {
+
+}
+
+
+// colors
+$color-slate--900: #1F314F;
+$color-slate--500: #68778D;
+$color-slate--300: #D5E1EF;
+$color-slate--300: #D5E1EF;
+$color-white: #ffffff;
+
+
+// spacings
+$spacing-500: 40px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+
+
+// QR landing page
+body {
+    background-color: $color-slate--300;
+}
+
+.qr-container {
+    @include h-center-container;
+    width: 320px;
+    background-color: $color-white;
+    padding: 16px 16px 16px 40px;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+    & img {
+        width: 288px;
+    }
+
+    &__header-text {
+        @include font-bold;
+        color: $color-slate--900
+    }
+
+    &__header-paragraph {
+        @include font-regular;
+        color: $color-slate--500;
+    }
+}
