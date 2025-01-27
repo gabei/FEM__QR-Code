@@ -3,8 +3,6 @@
 
 The challenge is to build out this QR code component and get it looking as close to the design as possible.
 
-![Design preview for the QR code component coding challenge](./preview.jpg)
-
 ## My Approach
 After an extended coding break, I wanted to take this opportunity to reconfigure my local environment and practice my workflow. This gave me a chance to smooth out the speedbumps.
 
