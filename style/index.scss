@@ -1,10 +1,6 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-body {
-    font-family: "Outfit", serif;
-}
-
 @mixin font-regular {
     line-height: 140%;
     font-size: 15px;
@@ -43,6 +39,8 @@ $spacing-200: 16px;
 
 // QR landing page
 body {
+    @include font-regular;
+    font-family: "Outfit", serif;
     background-color: $color-slate--300;
     display: flex;
     align-items: center;
@@ -60,25 +58,28 @@ body {
 .qr-container {
     width: 320px;
     background-color: #ffffff;
-    padding: 16px 16px 16px 40px;
+    padding-top: 16px;
     border-radius: 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
+    align-items: center;
 
     & img {
         width: 288px;
+        border-radius: 10px;
     }
 
-    &__header-text {
-        @include font-bold;
-        color: $color-slate--900
+    &__text{
+        padding: 0 20px;
+
+        &--header {
+            @include font-bold;
+            color: $color-slate--900
+        }
     }
 
-    &__header-paragraph {
-        @include font-regular;
-        color: $color-slate--500;
-    }
+    
 }
 
 .attribution {
