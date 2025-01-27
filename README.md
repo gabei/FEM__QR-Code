@@ -11,7 +11,7 @@ After an extended coding break, I wanted to take this opportunity to reconfigure
 ### Tools Used (besides HTML & CSS)
 - <a href="https://nodejs.org/en" target="_blank">Node.js</a>
 - <a href="https://www.npmjs.com/package/node-sass" target="_blank">Node-sass</a>
-- <a href="https://www.npmjs.com/package/live-server" target="_blank">ive-server</a>
+- <a href="https://www.npmjs.com/package/live-server" target="_blank">live-server</a>
 
 
 
