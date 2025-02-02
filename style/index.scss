@@ -75,6 +75,10 @@ body {
             @include font-bold;
             color: $color-slate--900
         }
+
+        &--description {
+            color: $color-slate--500;
+        }
     }
  
 }
